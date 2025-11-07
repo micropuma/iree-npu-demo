@@ -24,8 +24,6 @@ llvm_aie*
 
 *.log
 
-third_party/iree
-
 # Python
 .env
 *.pyc
