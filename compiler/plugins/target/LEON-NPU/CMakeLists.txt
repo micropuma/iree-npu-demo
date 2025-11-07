@@ -26,7 +26,7 @@ iree_cc_library(
 
 iree_compiler_register_plugin(
   PLUGIN_ID
-    simple_io_sample
+    leon_simple_io
   TARGET
     ::registration
 )

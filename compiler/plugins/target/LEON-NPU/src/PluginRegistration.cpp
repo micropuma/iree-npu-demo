@@ -48,8 +48,9 @@ struct MySession : public PluginSession<MySession, MyOptions> {
 
 IREE_DEFINE_COMPILER_OPTION_FLAGS(MyOptions);
 
-extern "C" bool iree_register_compiler_plugin_simple_io_sample(
+extern "C" bool iree_register_compiler_plugin_leon_simple_io(
     mlir::iree_compiler::PluginRegistrar *registrar) {
-  registrar->registerPlugin<MySession>("simple_io_sample");
+  registrar->registerPlugin<MySession>("leon_simple_io");
   return true;
 }
+
